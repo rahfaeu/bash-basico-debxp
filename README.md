@@ -1,7 +1,7 @@
 # 🦊 Curso Básico de Programação em Bash (DEBXP)
 Aqui temos todo o conteúdo do curso que realizei através da página: https://debxp.org/
 
-## Sumário do Curso
+## Table of Contents
 
 - [Aula 1 - Conceitos Básicos](#aula-1-conceitos-basicos)
   - [1.1 - Revendo o terminal do Linux](#1-1-revendo-o-terminal-do-linux)
@@ -13,9 +13,9 @@ Aqui temos todo o conteúdo do curso que realizei através da página: https://d
 
 
 
-## [Aula 1 - Conceitos Básicos](#aula-1-conceitos-basicos)
+## Aula 1 - Conceitos Básicos
 
-### [1.1 - Revendo o terminal do Linux](#1-1-revendo-o-terminal-do-linux))
+### 1.1 - Revendo o terminal do Linux
 
 Mesmo que você nunca tenha escrito um script, se você ja usou o terminal
 do Linux, você já utilizou o shell!
@@ -45,7 +45,7 @@ Essa característica é o que nos permite criar scripts,
 automatizar tarefas e criar programas para as mais 
 diversas finalidades.
 
-### [1.2 - O prompt da linha de comando](#1-2-O-prompt-da-linha-de-comando)
+### 1.2 - O prompt da linha de comando
 
 Quando iniciado, o shell procura suas configurações
 globais, as configurações do usuário e, finalmente, 
@@ -61,7 +61,7 @@ Mas aqui nós utilizaremos o prompt assim...
 :~$ - para comandos executados como usuário normal.
 :~# - para comandos executados como usuário "root".
 
-### [1.3 - Tipos de shell](#1-3-tipos-de-shell)
+### 1.3 - Tipos de shell
 
 Existem vários tipos de shell, entre eles...
 
@@ -72,6 +72,6 @@ Existem vários tipos de shell, entre eles...
 * zsh 	- (z-shell) Zero Shell
 * fish	- Friendly Interactive Shell
 
-### [1.4 - O que é o Bash](#1-4-o-que-e-o-bash)
+### 1.4 - O que é o Bash [top](#table-of-contents)
 
 O bash, ou Bourne Again Shell é uma implementação aprimorada do inter
