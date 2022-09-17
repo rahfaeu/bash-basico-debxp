@@ -1,6 +1,13 @@
 # 🦊 Curso Básico de Programação em Bash (DEBXP)
 Aqui temos todo o conteúdo do curso que realizei através da página: https://debxp.org/
 
+Playlist do Curso: [Curso Básico de Programação em Bash](https://debxp.org/cbpb/)
+O curso é apresentado pelo **Brau Araujo** e você pode apoiar ele pelos links abaixo:
+
+- [Apoio mensal no Apoia.se](https://apoia.se/debxpcursos)
+- [Doação pelo PicPay](https://app.picpay.com/user/blauaraujo)
+- PIX: pix@blauaraujo.com
+
 ## Table of Contents
 
 - Aula 1 [Conceitos Básicos](#conceitos-basicos)
