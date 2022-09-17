@@ -18,6 +18,8 @@ O curso é apresentado pelo **Brau Araujo** e você pode apoiar ele pelos links 
   - 1.5 [Os comandos "built-ins" do Bash](#os-comandos-built-ins-do-bash)
   - 1.6 [O terminal como console interativo](#o-terminal-como-console-interativo)
   - 1.7 [Qual Shell estamos utilizando](#qual-shell-estamos-utilizando)
+- Aula 2 [Antes do primeiro script](#antes-do-primeiro-script)
+  - 2.1 [Revisão Aula 1](#revisao-aula-1)
 
 ## Conceitos Básicos
 
@@ -147,3 +149,56 @@ Método 2: comando `echo $SHELL`
 ```sh 
 echo $SHELL
 ```
+
+## Antes do primeiro script
+
+### Revisão Aula 1
+
+1. Aprendemos que um script é um arquivo de texto contendo comandos que normalmente digitamos no terminal.
+2. Aprendemos também que o shell é um interpretador que executa comandos que podem vir da entrada padrão (terminal), ou de um arquivo (script).
+
+- Quando trabalhamos digitando os comandos no terminal, estamos utilizando o shell de forma `interativa`.
+- Quando escrevemos os comandos em arquivos (scripts), estamos utilizando o shel de forma `não interativa`.
+
+Umas das utilidades dos scripts, é a possibilidade de executar comandos "em lote", em vez de digitar um por um no terminal.
+
+Poderíamos criar um arquivo chamado `infos.sh` e dentro dele incluir os seguintes comandos:
+
+```sh
+#!/bin/bash
+
+whoami
+hostname
+uptime -p
+uname -rms
+```
+Para habilitar a execução do script que acabamos de criar, basta executar o seguinte comando no terminal:
+
+```sh
+chmod +x infos.sh
+```
+
+E para executar o script basta executar:
+
+```sh
+./infos.sh
+```
+
+### Cuidados e boas-práticas
+
+Nunca saia executando qualquer scrips que encontrar por ai...
+
+- Scripts de terceiros, mesmo que não sejam maliciosos, podem não fazer o que pensamos que fazem.
+- Podem ser scripts maliciosos.
+- O desenvolver do scrip pode ser inexperiente e a solução dele prejudicar seu sistema.
+- Mesmo que o script tenha a solução para o seu problema e que o desenvolvedor seja experiente, a solução dele pode ser incompatível com o seu sistema.
+
+#### Cuidados
+
+Antes de executar qualquer comando ou script, você deve sempre analisar e entender o que ele faz!
+
+#### Boas-práticas
+
+- Organização: Trabalhe criando pastas para organizar seus arquivos dividos assuntos.
+- Garanta que seu arquivo de script não tenha um nome de um comando ou aplicativo que já existe no sistema.
+- Não salve suas pastas de estudos e testes no caminho do sistema ($PATH).
