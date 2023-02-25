@@ -202,3 +202,57 @@ Antes de executar qualquer comando ou script, você deve sempre analisar e enten
 - Organização: Trabalhe criando pastas para organizar seus arquivos dividos assuntos.
 - Garanta que seu arquivo de script não tenha um nome de um comando ou aplicativo que já existe no sistema.
 - Não salve suas pastas de estudos e testes no caminho do sistema ($PATH).
+
+#### Comando test ([ ] / [[ ]])
+
+O comando test avalia condições lógicas:
+
+Testando se 10 é menor que 20:
+
+```sh
+test 10 -lt 20; echo $?
+0
+```
+
+Testando se se uma arquivo de script tem permisão de execução:
+
+```sh
+> script_file.sh
+test -x script_file.sh; echo $?
+1
+```
+No caso acima, o arquivo acabou de ser criado, e por padrão ele é criado sem o permissionamento de execução.
+
+Após atribuir a permissão com o comando `chmod +x`, podemos testar novamente:
+
+```sh
+chmod +x script_file.sh
+test -x script_file.sh; echo $?
+1
+```
+
+O comando `test` também pode ser representado por colchetes (`[ ]`), ao invés da palavra `test`, ou até mesmo por colchetes duplos (`[[ ]]`) quando desejar utilizar expressões regulares no testes:
+
+```sh
+[ 10 -lt 20 ]; echo $?
+0
+```
+
+```sh
+[[ 10 -lt 20 ]]; echo $?
+0
+```
+
+> Atenção!<br>
+> Não esqueça de considerar os espaços entre os colchetes de abertura e fechamento e seu teste lógico.<br>
+> Caso não considere os espaços, um erro irá ocorrer.
+
+```sh
+# Correto:
+[[ 10 -lt 20 ]]
+[ 10 -lt 20 ]
+
+# Errado:
+[[10 -lt 20]]
+[10 -lt 20]
+```
