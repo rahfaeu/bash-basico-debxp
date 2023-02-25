@@ -19,8 +19,8 @@ O curso é apresentado pelo **Brau Araujo** e você pode apoiar ele pelos links 
   - 1.6 [O terminal como console interativo](#o-terminal-como-console-interativo)
   - 1.7 [Qual Shell estamos utilizando](#qual-shell-estamos-utilizando)
 - Aula 2 [Antes do primeiro script](#antes-do-primeiro-script)
-  - 2.1 [Revisão Aula 1](#revisao-aula-1)
-  - 2.2 [Comando test ([ ] / [[ ]])](#comando-test)
+  - 2.1 [Revisão Aula 1](#revisão-aula-1)
+  - 2.2 [Comando test](#comando-test)
 
 ## Conceitos Básicos
 
@@ -208,7 +208,8 @@ Antes de executar qualquer comando ou script, você deve sempre analisar e enten
 
 ### Aula 2
 [top](#table-of-contents)
-#### Comando test ([ ] / [[ ]])
+
+#### Comando test
 
 O comando test avalia condições lógicas:
 
