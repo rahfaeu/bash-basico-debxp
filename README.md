@@ -20,6 +20,7 @@ O curso é apresentado pelo **Brau Araujo** e você pode apoiar ele pelos links 
   - 1.7 [Qual Shell estamos utilizando](#qual-shell-estamos-utilizando)
 - Aula 2 [Antes do primeiro script](#antes-do-primeiro-script)
   - 2.1 [Revisão Aula 1](#revisao-aula-1)
+  - 2.2 [Comando test ([ ] / [[ ]])](#comando-test)
 
 ## Conceitos Básicos
 
@@ -153,6 +154,7 @@ echo $SHELL
 ## Antes do primeiro script
 
 ### Revisão Aula 1
+[top](#table-of-contents)
 
 1. Aprendemos que um script é um arquivo de texto contendo comandos que normalmente digitamos no terminal.
 2. Aprendemos também que o shell é um interpretador que executa comandos que podem vir da entrada padrão (terminal), ou de um arquivo (script).
@@ -185,6 +187,7 @@ E para executar o script basta executar:
 ```
 
 ### Cuidados e boas-práticas
+[top](#table-of-contents)
 
 Nunca saia executando qualquer scrips que encontrar por ai...
 
@@ -203,6 +206,8 @@ Antes de executar qualquer comando ou script, você deve sempre analisar e enten
 - Garanta que seu arquivo de script não tenha um nome de um comando ou aplicativo que já existe no sistema.
 - Não salve suas pastas de estudos e testes no caminho do sistema ($PATH).
 
+### Aula 2
+[top](#table-of-contents)
 #### Comando test ([ ] / [[ ]])
 
 O comando test avalia condições lógicas:
